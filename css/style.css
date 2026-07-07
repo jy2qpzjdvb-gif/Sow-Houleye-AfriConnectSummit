@@ -1,0 +1,79 @@
+/* ===========================================================
+     VARIABLES CSS
+========================================================== */
+:root{
+    /* Couleurs */
+    --primary-color:#2563eb;
+    --secondary-color:#7c3aed;
+    --accent-color:#06b6d4;
+    --couleur-arriere:#ffffff;
+    --couleur-surface:#f8fafc;
+    --couleur-texte:#0f172a;
+    --couleur-ligght:#64748b;
+    --couleur-bordure:#e2e8f0;
+    /* Typographie */
+    --police-titre:"space grotesk", sans cherif;
+    --police-corps:"inter",sans cherif;
+    /* Espacement */
+    --section-padding:80px;
+    /* Bordures */
+    --border-radius:16px;
+    /* ombres */
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+    /* Animation */
+    --transition:.3s ease;
+
+    [data-theme="dark"]{
+        --couleur-arriere:#020617;
+        --couleur-surface:#0f172a;
+
+        --couleur-texte:#f8fafc;
+        --texte-light:#cbd5e1;
+
+        --couleur-bordure:#334155;
+
+        --shadow:0 8px 25px rgba(0,0,0,.5);
+    }
+}
+/* ===========================================================
+     RESET CSS
+========================================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:var(--police-corps);
+    background: var(--couleur-arriere);
+    color: var(--couleur-texte);
+    transition: var(--transition);
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+
