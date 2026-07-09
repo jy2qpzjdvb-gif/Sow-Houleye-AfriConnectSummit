@@ -54,6 +54,7 @@ body{
     color: var(--couleur-texte);
     transition: var(--transition);
     line-height: 1.6;
+    padding-top: 90px;
 }
 
 img{
@@ -75,5 +76,110 @@ button{
     border: none;
     font-family: inherit;
 }
+/* ===========================================================
+     NAVBAR
+========================================================== */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 20px 8%;
+
+    background: rgb(255, 255, 255,.8);
+    backdrop-filter: blur(12px);
+
+    box-shadow: var(--shadow);
+
+    z-index: 1000;
+
+    transition: var(--transition);
+}
+.logo{
+    font-family: var(--police-titre);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    font-weight: 500;
+    transition: var(--transition);
+}
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+.theme-toggle,.menu-toggle{
+    background: transparent;
+    color: var(--couleur-texte);
+    font-size: 1.5rem;
+}
+/* ===========================================================
+     HERO
+========================================================== */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8%;
+    background: linear-gradient(135deg,#2563eb,#7c3aed);
+    color: white;
+}
+.hero-content{
+    max-width: 850px;
+}
+.hero-tag{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255,.15);
+    backdrop-filter: blur(8px);
+    font-size: .95rem;
+}
+.hero h1{
+    font-family: var(--police-titre);
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.hero p{
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    margin-bottom: 40px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.btn{
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.btn-primary{
+    background: white;
+    color: var(--primary-color);
+}
+.btn-primary:hover{
+    transform: translateY(-5px);
+}
+.btn-secondary{
+    border: 2px solid white;
+}
+.btn-secondary:hover{
+    background: white;
+    color: var(--primary-color);
+}
