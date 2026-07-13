@@ -262,3 +262,66 @@ button{
     margin-bottom: 20px;
     color: var(--primary-color);
 }
+/* ===========================================================
+     HERO DES PAGES
+========================================================== */
+.page-hero{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 8%;
+    background: linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+    color: white;
+}
+.page-hero-content{
+    max-width: 700px;
+}
+.page-hero h1{
+    font-family: var(--police-titre);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.page-hero p{
+    font-size: 1.1rem;
+}
+/* ===========================================================
+     PLANNING
+========================================================== */
+.planning{
+    padding: 100px 8%;
+}
+.planning h2{
+    text-align: center;
+    font-family: var(--police-titre);
+    margin-bottom: 60px;
+}
+.planning-day{
+    margin-bottom: 60px;
+}
+.planning-day h3{
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.planning-item{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    padding: 25px;
+    background: var(--couleur-arriere);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.planning-item:hover{
+    transform: translateX(10px);
+}
+.time{
+    font-weight: bold;
+    min-width: 90px;
+    color: var(--primary-color);
+}
+.event{
+    margin-bottom: 10px;
+}
